@@ -1,7 +1,7 @@
 import axios from 'axios';
 import Cookie from 'js-cookie';
 
-const API_URL = (process.env.NEXT_PUBLIC_API_URL || 'https://full-stack-task-management-application-k5km.onrender.com') + '/api';
+const API_URL = (process.env.NEXT_PUBLIC_API_URL || 'https://full-stack-task-management-application-production.up.railway.app') + '/api';
 
 const apiClient = axios.create({
   baseURL: API_URL,
