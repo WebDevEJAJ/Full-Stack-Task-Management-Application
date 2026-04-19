@@ -3,8 +3,8 @@ import Cookie from 'js-cookie';
 export const setAuthToken = (token) => {
   Cookie.set('token', token, {
     expires: 7,
-    secure: process.env.NODE_ENV === 'production',
-    sameSite: 'strict',
+    secure: true,
+    sameSite: 'None',
   });
 };
 
